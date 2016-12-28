@@ -1,6 +1,21 @@
 # Apple Disk Utility (Legacy)
 
-#### Version 13 (OS X Yosemite, 2014)
+> Version 13 (OS X Yosemite, 2014)
+
+## BUG FOUND!
+
+See Issues for more information, but basically this _might_ crash on launch
+because it's missing one (or more?) `dylib` resources. Until I have bandwidth
+to figure that out or hack around it, or get community feedback, this short
+doc I wrote months ago will have to suffice.
+
+[DIY Boot Disks](https://gist.github.com/jaustinhughey/d717d6c73e20307afaadb1eaee7710c0)
+
++ Uses `dd` to zero a given disk on MacOS based on the _raw_ disk device (`/dev/rdiskN`)
++ Then does the same thing to copy an ISO to the disk directly.
++ Other notes that might be useful.
++ Definitely not a replacement, but might help you scratch 'yer itch.
++ _Possibly NSFW if you work with hyper-PC-profanity nazis... (contains rants by yours truly)_
 
 ## Problem
 
